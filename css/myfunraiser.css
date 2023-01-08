@@ -1,0 +1,37 @@
+.fundraisercard
+{
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
+}
+
+.fundraisercard .card{
+    background: #01BFBD;
+    padding: 1rem;
+}
+
+.fundraisercard .card p{
+    color: white;
+    font-weight: bolder;
+}
+
+.fundraisercard .card a{
+    display: block;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+}
+
+.goto
+{
+    background: white;
+    color: #01BFBD;
+    padding: 0.6rem;
+    border-radius: 10px;
+}
+
+.editfund
+{
+    background: rgb(24, 93, 231);
+    color: white;
+    padding: 0.6rem;
+    border-radius: 10px;
+}

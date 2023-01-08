@@ -19,10 +19,11 @@ $id = $data['id'];
 
 ?>
 
+<link rel="stylesheet" href="css/myfunraiser.css">
 
 
 <div class="container">
-    <div class="row">
+    <div class="row fundraisercard">
     <?php
 
     include 'config.php';
@@ -30,15 +31,72 @@ $id = $data['id'];
     $alldata = mysqli_query($conn, "SELECT * FROM `fundraiser` WHERE user_id = $id");
 
     while ($row = mysqli_fetch_array($alldata)) {
-        echo "<div class='col-lg-6'>
+        echo "<div class='col-lg-4'>
             <div class='card'>
-                
+                <div class='d-flex'>
+                    <div>
+                        <p>Goal: $row[amount_rise]$</p>
+                        <p>$row[amount] raised</p>
+                    </div>
+                    <div>
+                        <a href='' class='goto'>Go to fundraiser</a>
+                        <a href='' class='editfund'>Edit fundraiser</a>
+                    </div>
+                </div>
             </div>
         </div>";
     }
 
         ?>
-    </div>
+        <?php
+
+        include 'config.php';
+
+        $alldata = mysqli_query($conn, "SELECT * FROM `ngo` WHERE user_id = $id");
+
+        while ($row = mysqli_fetch_array($alldata)) {
+            echo "<div class='col-lg-4'>
+                <div class='card'>
+                    <div class='d-flex'>
+                        <div>
+                            <p>Goal: $row[amount_rise]$</p>
+                            <p>$row[amount] raised</p>
+                        </div>
+                        <div>
+                            <a href='' class='goto'>Go to fundraiser</a>
+                            <a href='' class='editfund'>Edit fundraiser</a>
+                        </div>
+                    </div>
+                </div>
+            </div>";
+        }
+
+            ?>
+            <?php
+
+            include 'config.php';
+
+            $alldata = mysqli_query($conn, "SELECT * FROM `other_cause` WHERE user_id = $id");
+
+            while ($row = mysqli_fetch_array($alldata)) {
+                echo "<div class='col-lg-4'>
+                    <div class='card'>
+                        <div class='d-flex'>
+                            <div>
+                                <p>Goal: $row[amount_rise]$</p>
+                                <p>$row[amount] raised</p>
+                            </div>
+                            <div>
+                                <a href='' class='goto'>Go to fundraiser</a>
+                                <a href='' class='editfund'>Edit fundraiser</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>";
+            }
+
+                ?>
+                </div>
 </div>
 
 
