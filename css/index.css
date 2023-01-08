@@ -1,0 +1,114 @@
+.carouselside img
+{
+    height: 27rem;
+
+}
+
+.carouselside h2{
+    color: #444444;
+    font-weight: bold;
+}
+
+.carouselside .textfield
+{
+    margin-top: 5rem;
+}
+
+.platformdiv 
+{
+    margin-top: 2rem;
+}
+
+.platformdiv div
+{
+    margin-right: 3rem;
+}
+
+.platformdiv .title
+{
+    color: #03B2D5;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.fund
+{
+    margin-top: 3rem;
+}
+
+.fund .founraiserbtn
+{
+    background: #039695;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.donate
+{
+    background: white;
+    box-shadow: 2px 2px 2px 2px;
+    width: 50rem;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.donate .btn
+{
+    width: 8rem;
+    margin-top: 2rem;
+    background: #1F4867;
+    padding: 1rem;
+}
+
+.donate h6
+{
+    color: #204B6B;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.donate p
+{
+    color: #747171;
+}
+
+.trend h1{
+    color: #434343;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.trend p{
+    text-align: center;
+    color: #83ADDA;
+}
+
+.successstory
+{
+    margin-top: 5rem;
+}
+
+.successstory h1{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #444444;
+}
+
+.textcarousel h5{
+    color: #707070;
+    font-weight: bold;
+}
+
+.textcarousel p{
+    color: #686767;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon
+{
+    background: #000;
+}
+
+

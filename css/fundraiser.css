@@ -1,0 +1,42 @@
+.fundraiser
+{
+    width: 40rem !important;
+    background: rgb(252, 251, 251);
+    box-shadow: 2px 2px 2px 2px;
+    margin: auto;
+    padding: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 2rem;
+}
+
+.fundraiser h4
+{
+    text-align: center;
+}
+
+.fundraiser form button 
+{
+    width: 100%;
+    background: #039796;
+}
+
+.fundraiser form button:hover
+{
+    background: rgb(255, 254, 254);
+    color: black;
+}
+
+.mybtn
+{
+
+  
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.al
+{
+    color: blue !important;
+    margin-top: 1rem !important;
+}
