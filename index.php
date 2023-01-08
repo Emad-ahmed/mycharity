@@ -2,6 +2,16 @@
 
 <link rel="stylesheet" href="css/index.css">
 
+<style>
+    .pg-footer {
+    width:100% !important;
+      background-color: #004658;
+      color: #fff;
+   
+  }
+  
+</style>
+
 <div class="container-fluid">
     <div class="row carouselside">
         <div class="col-lg-6">
@@ -44,39 +54,32 @@
 </div>
 
 
+<div class="main">
+        <h1 class="mtitle">Latest News</h1>
+        <ul class="cards">
+            <?php
 
-<div class="container trend">
-    <div>
-    <h1>Medical Treatment Fundraiser</h1>
-    </div>
-    <div>
-        <div class="row">
-        <?php
+            include 'config.php';
 
-        include 'config.php';
+            $alldata = mysqli_query($conn, "SELECT * FROM `fundraiser`");
 
-        $alldata = mysqli_query($conn, "SELECT * FROM `teacher` WHERE department='BBA'");
-
-        while ($row = mysqli_fetch_array($alldata)) {
-        echo "<div class='col-lg-4'>
-        <div class='card' style='width: 18rem;'>
-            <img src='...' class='card-img-top' alt='...'>
-            <div class='card-body'>
-                <h5 class='card-title'>Card title</h5>
-                <p>by friends</p>
-                <div class='d-flex'>
-                    <h4>$549</h4>
-                    <p>Raised out $549</p>
+            while ($row = mysqli_fetch_array($alldata)) {
+                echo "    <li class='cards_item'>
+                <div class='card'>
+                <div class='card_image'><img src='admin/$row[image]'></div>
+                <div class='card_content'>
+                <h2 class='card_title mb-3'>$row[title]........</h2>
+    
+                <a href='newsshow.php? id=$row[id]' class='btn card_btn'>Read More</a>
                 </div>
-                <p class='card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-            </div>
-        </div>
-        </div>"
-        }
+                </div>
+            </li>";
+            }
+            ?>
+
+        </ul>
     </div>
-</div>
+
 
 <div class="container successstory">
     <h1>Success Stories</h1>

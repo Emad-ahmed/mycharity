@@ -63,7 +63,7 @@ if(isset($_SESSION['email']))
             <button class='dropbtn'>$name <i class='fa fa-sort-desc' aria-hidden='true'></i></button>
             <div class='dropdown-content'>
                 <a href='profile.php'>View Profile</a>
-                <a href='#'>My Funraisers</a>   
+                <a href='myfundraiser.php'>My Funraisers</a>   
                 <a href='#'>My Donations</a>
                 <a href='#'>Start A New Fundraiser</a>
                 <a href='logout.php'>Logout</a>
